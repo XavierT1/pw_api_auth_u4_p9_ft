@@ -58,7 +58,7 @@ public class AuthResource {
         public long expiresAt;
         public String role;
 
-        // Constructor vacío obligatorio para que JSON-B pueda serializar el objeto
+        // Constructor vacío 
         public TokenResponse() {
         }
 
