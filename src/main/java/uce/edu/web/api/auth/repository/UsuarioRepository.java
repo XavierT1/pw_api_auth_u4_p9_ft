@@ -7,7 +7,6 @@ import uce.edu.web.api.auth.domain.Usuario;
 @ApplicationScoped
 public class UsuarioRepository implements PanacheRepository<Usuario> {
     
-    // Método personalizado para buscar por credenciales
     public Usuario findByUsernameAndPassword(String username, String password) {
         return find("usuario = ?1 and password = ?2", username, password).firstResult();
     }
