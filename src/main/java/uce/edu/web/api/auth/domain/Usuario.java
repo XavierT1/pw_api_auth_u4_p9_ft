@@ -13,5 +13,8 @@ public class Usuario extends PanacheEntityBase {
     public String usuario;
     public String password;
     public String role;
-    
+
+    public Usuario() {
+    }
+
 }
